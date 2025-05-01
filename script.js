@@ -76,11 +76,21 @@ console.log(findWordWithA(words));
 
 const sumOfArray = (arrayOfNumbers) => {
     //Your code here
- }
- 
- // Input: [1, 2, 3, 4, 5, 6]
- // Output: 21
- 
+    if(arrayOfNumbers.length == 0){
+      return 0;
+    }
+  
+    const num = arrayOfNumbers.pop();
+    console.log(arrayOfNumbers);
+    console.log(num);
+  
+    return num + sumOfArray(arrayOfNumbers);
+  }
+  
+  console.log(sumOfArray([1, 2, 3, 4, 5, 6]))
+  
+  // Input: [1, 2, 3, 4, 5, 6]
+  // Output: 21
 
  
  
