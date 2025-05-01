@@ -58,6 +58,16 @@ const words = ["apple", "banana", "cherry", "date", "elderberry"];
 // Your higher-order function here
 const findWordWithA = words => {
 // Use find
+
+if(!wordsArr.length >= 1){
+    return "You need an array filled with words"
+  }
+
+  const wordA = wordsArr.find(word => word.includes("a"))
+
+  return wordA;
+
+
 };
 
 console.log(findWordWithA(words));
