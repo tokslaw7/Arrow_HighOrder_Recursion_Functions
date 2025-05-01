@@ -37,5 +37,40 @@ console.log(evenNumbersSquared(numbers));
 
 
 
+const prices = [10.99, 5.49, 12.99, 8.75, 15.20];
+
+// Your higher-order function here
+const calculateDiscountedTotal = prices => prices.reduce((total, price) => {
+// Use reduce
+
+let discountedPrice = price * 0.8;
+  // console.log(discountedPrice);
+
+  return total + discountedPrice;
+}, 0).toFixed(2);
+
+console.log(calculateDiscountedTotal(prices));
+
+
+
+const words = ["apple", "banana", "cherry", "date", "elderberry"];
+
+// Your higher-order function here
+const findWordWithA = words => {
+// Use find
+};
+
+console.log(findWordWithA(words));
+
+
+
+const sumOfArray = (arrayOfNumbers) => {
+    //Your code here
+ }
+ 
+ // Input: [1, 2, 3, 4, 5, 6]
+ // Output: 21
+ 
+
  
  
